@@ -2,44 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formularz Asi</title>
+    <title>Formularz Asi Nowak</title>
+    
+   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+	<link rel="stylesheet" href="style.css">
+	
+	
+
 </head>
 <body>
-   
- <form method="POST" action="https://formspree.io/j.traciak@gmail.com">
- 
-  <label for="name">Imię:</label><br>
-  <input type="text" id="name" name="fname" placeholder="Imię"><br><br>
-  
-  <label for="lname">Nazwisko:</label><br>
-  <input type="text" id="lname" name="lname" placeholder="Nazwisko"><br><br>
-  
-  <label for="name">Nr Telefonu:</label><br>
-  <input type="tel" name="usrtel" placeholder="Nr telefonu"><br><br>
-  
-  
-  <select name="miasto" id="miasto">
-      <option value="Krakow">Krakow</option>
-      <option value="Warszawa">Warszawa</option>    
-  </select>
-  
-  <input type="checkbox" id="zgoda">
-  <label for="zgoda">Zgoda</label>
-  
-  <input type="radio" id="kobieta">
-  <label for="kobieta">Kobieta</label>
-  
-  
-  
-  <label for="name">Wiadomość:</label><br>
-  <textarea name="message" maxlength="1000" placeholder="Your message"></textarea><BR><br>
-  
-  
-  <button type="submit">Wyślij!</button><br>
-  <input type="submit" value="Send!">
+<div>
+	 <form method="POST" action="https://formspree.io/j.traciak@gmail.com">
+
+	  <label for="name">Imię:</label>
+	  <input type="text" id="name" name="first_name" placeholder="Imię"><br><br>
+
+	  <label for="lname">Nazwisko:</label>
+	  <input type="text" id="lname" name="last_name" placeholder="Nazwisko"><br><br>
+
+	  <label for="nrtel">Nr telefonu:</label>
+	  <input type="tel" id="nrtel" name="tel_number" placeholder="Nr telefonu"><br><br>
+
+	  <label for="miasto">Wybierz miasto:</label>
+	  <select name="city" id="miasto">
+		  <option value="Krakow">Krakow</option>
+		  <option value="Warszawa">Warszawa</option>  
+		  <option value="Gdańsk">Gdańsk</option>    
+	  </select><br><br>
+
+	  <label for="zgoda">Zgodzam się przekazać dane osobowe</label>
+	  <input type="checkbox" id="zgoda"> <br>
+	  
+	  <label for="kobieta">Jestem kobietą</label>
+	  <input type="radio" id="kobieta" value="female" name="gender" checked> <br>
+	  
+	  <label for="kobieta">Jestem mężczyzną</label>
+	  <input type="radio" id="mezczyzna" name="gender" value="male"> <br>
+
+	  <label for="name">Twoja wiadomość:</label> <br>
+	  <textarea id="text_area" name="message" maxlength="1000" placeholder="Masz tysiąc znakow"></textarea><BR>
+	  <br>
+	  
+	  
+	  <input type="submit" id="btn" value="wyślij!">
 
 </form>
-   
+ </div>  
    
 </body>
 </html>
