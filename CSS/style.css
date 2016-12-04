@@ -1,15 +1,25 @@
 body {
 	font-family: 'Lato', sans-serif;
+	margin-left: 40px;
 }
 
 span{
 	color: orange;
 }
 
+.icons a:hover{
+	background-color: #fff;
+	color: #2b4a64;
+}
+.icons a:visited { 
+    color: #fff;
+}
+/*HEADER*/
 #header .main_header_content{
-	position: absolute;
+	position: relative;
 }
 
+/*lewa ikonka*/
 #header .main_header_content .left_header_content{
 	position: relative;
 	display: inline-block;
@@ -22,6 +32,7 @@ span{
 	text-align: center;
 }
 
+/*content po prawej*/
 #header .main_header_content .right_header_content{
 	position: relative;
 	display: inline-block;
@@ -37,10 +48,19 @@ span{
 	font-size: 30px;
 }
 
-.icons a:hover{
-	background-color: #fff;
-	color: #2b4a64;
+/*spis zadań*/
+#main_content{
+	position: relative;
+	margin-top: 30px;
+	width: 600px;
 }
-.icons a:visited { 
-    color: #fff;
+
+#main_content a{
+	text-decoration: none;
 }
+#main_content_list{
+	margin-bottom: 100px;
+}
+
+
+
