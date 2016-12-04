@@ -13,19 +13,24 @@ span{
 #header .main_header_content .left_header_content{
 	position: relative;
 	display: inline-block;
-	font-size: 60px;
+	font-size: 70px;
 	height: 70px;
 	width: 70px;
 	padding: 5px;
 	margin: 5px;
 	line-height: 10px;
-	transform: translateY(-50%);
-	align-content: center;
+	text-align: center;
 }
 
 #header .main_header_content .right_header_content{
 	position: relative;
 	display: inline-block;
+}
+
+#header .main_header_content .right_header_content{
+	margin: 0;
+	padding: 0;
+	line-height: 5px;
 }
 
 #header .main_header_content .right_header_content a{
