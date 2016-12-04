@@ -1,0 +1,41 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+span{
+	color: orange;
+}
+
+#header .main_header_content{
+	position: absolute;
+}
+
+#header .main_header_content .left_header_content{
+	position: relative;
+	display: inline-block;
+	font-size: 60px;
+	height: 70px;
+	width: 70px;
+	padding: 5px;
+	margin: 5px;
+	line-height: 10px;
+	transform: translateY(-50%);
+	align-content: center;
+}
+
+#header .main_header_content .right_header_content{
+	position: relative;
+	display: inline-block;
+}
+
+#header .main_header_content .right_header_content a{
+	font-size: 30px;
+}
+
+.icons a:hover{
+	background-color: #fff;
+	color: #2b4a64;
+}
+.icons a:visited { 
+    color: #fff;
+}

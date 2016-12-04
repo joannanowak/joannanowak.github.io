@@ -1,57 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Formularz Asi Nowak</title>
-    
-   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    
-	<link rel="stylesheet" href="style.css">
-	
-	
+	<meta charset="UTF-8">
+	<title>Homework</title>
+	<!--	Font awesome-->
+	<script src="https://use.fontawesome.com/b13e12e020.js"></script>
 
+	<!--	Google Fonts Sheet-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<!--	Main styles-->
+	<link rel="stylesheet" href="../homework/CSS/style.css">
 </head>
+
 <body>
-<div>
-	 <form method="POST" action="https://formspree.io/j.traciak@gmail.com">
+	<header id="header">
+		<h1>Homework <span>Akademia108</span> </h1>
+		<div class="main_header_content">
+			<div class="left_header_content">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>
+			</div>
+			
+			<div class="right_header_content">
+				<h2>Joanna Nowak</h2>
+				<address><a href="mailto:j.traciak@gmail.com" title="e-mail me!"><i class="fa fa-envelope" aria-hidden="true"></i></a></address>
+					
 
-	  <label for="name">Imię:</label>
-	  <input type="text" id="name" name="first_name" placeholder="Imię"><br><br>
+			</div>
+		</div>
+	</header>
 
-	  <label for="lname">Nazwisko:</label>
-	  <input type="text" id="lname" name="last_name" placeholder="Nazwisko"><br><br>
-
-  	 <label for="email">E-mail:</label>
-	  <input type="text" id="email" name="e-mail" placeholder="podaj poprawny adres mailowy"><br><br>
-  	
-	  <label for="nrtel">Nr telefonu:</label>
-	  <input type="tel" id="nrtel" name="tel_number" placeholder="Nr telefonu"><br><br>
-
-	  <label for="miasto">Wybierz miasto:</label>
-	  <select name="city" id="miasto">
-		  <option value="Krakow">Krakow</option>
-		  <option value="Warszawa">Warszawa</option>  
-		  <option value="Gdańsk">Gdańsk</option>    
-	  </select><br><br>
-
-	  <label for="zgoda">Zgodzam się przekazać dane osobowe</label>
-	  <input type="checkbox" id="zgoda"> <br>
-	  
-	  <label for="kobieta">Jestem kobietą</label>
-	  <input type="radio" id="kobieta" value="female" name="gender" checked> <br>
-	  
-	  <label for="kobieta">Jestem mężczyzną</label>
-	  <input type="radio" id="mezczyzna" name="gender" value="male"> <br>
-
-	  <label for="name">Twoja wiadomość:</label> <br>
-	  <textarea id="text_area" name="message" maxlength="1000" placeholder="Masz tysiąc znakow"></textarea><BR>
-	  <br>
-	  
-	  
-	  <input type="submit" id="btn" value="wyślij!">
-
-</form>
- </div>  
-   
 </body>
+
 </html>
