@@ -85,3 +85,37 @@ function licz() {
 }
 
 licz();
+
+
+
+
+var array = [0, 1, 2, 3, 4, 5];
+
+function sqrSum(){
+  var suma=0;
+  for (var i=0; i<tablica.length; ++i){
+    suma += (tablica[i] * tablica[i]);
+  }
+  
+   console.log(suma);
+}
+
+sqrSum();
+
+
+
+var array = [0, 1, 2, 3, 4, 5];
+
+function sqrSum(){
+  var suma=0;
+  for (var i=0; i<tablica.length; ++i){
+    suma += (Math.pow(tablica[i],2));
+  }
+  
+   console.log(suma);
+}
+
+sqrSum();
+
+
+//wynik ma być 55
