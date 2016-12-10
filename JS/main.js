@@ -119,3 +119,6 @@ sqrSum();
 
 
 //wynik ma być 55
+
+
+(4>1) ? console.log(”prawda”) : console.log(”fałsz”)
