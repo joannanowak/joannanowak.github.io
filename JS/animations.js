@@ -32,10 +32,10 @@ var paragrafIndex =0;
 		lastGoFirst(paragrafIndex); //jako parametr - kolejny nr paragrafu
 		console.log(paragrafIndex);
 	});
-	function lastGoFirst(){
+	function lastGoFirst(paragrafIndex){
 			for(var i=0; i<paragrafCount; ++i){
-				if(paragrafIndex=0){
-					paragraf.css({'color': 'blue'},2000);
+				if(paragrafIndex=i){
+					paragraf.slideUp(2000);
 				}
 			}
 		}
@@ -48,7 +48,7 @@ var paragrafIndex =0;
 	function firstGoLast(){
 		for (var i=0; i< paragrafCount; ++i){
 			if (paragrafIndex = paragrafCount){
-				paragraf.slideUp(2000); 
+				paragraf.slideUp(2000);
 			}
 		}
 	}
