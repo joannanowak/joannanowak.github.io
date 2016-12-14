@@ -3,6 +3,9 @@ var kwadrat = $('#kwadrat');
 var button = $('button');
 var napis = $('h2');
 var button2 = $('#button2');
+var button3 = $('#button3');
+var paragrafCount = $('.para').length;
+var paragrafIndex =0;
 	
 	napis.hide(); //ukrywa napis h2
 	button.click(function(){ //po kliknięciu w button
@@ -20,12 +23,24 @@ var button2 = $('#button2');
 		}
 	})
 	
+	console.log(paragrafCount);
 	
 	button2.click(function(){
+		lastGoFirst(); //jako parametr - kolejny nr paragrafu
+		console.log(paragrafIndex);
+	});
+	function lastGoFirst(){
+			
+		}
+	
+	
+	button3.click(function(){
+		firstGoLast(paragrafIndex);
+		console.log(paragrafIndex);
+	});
+	function firstGoLast(){
 		
-	})
-	
-	
+	}
 	
 	
 });
