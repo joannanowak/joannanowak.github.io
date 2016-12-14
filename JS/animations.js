@@ -4,6 +4,7 @@ var button = $('button');
 var napis = $('h2');
 var button2 = $('#button2');
 var button3 = $('#button3');
+var paragraf = $('.para');
 var paragrafCount = $('.para').length;
 var paragrafIndex =0;
 	
@@ -26,11 +27,15 @@ var paragrafIndex =0;
 	console.log(paragrafCount);
 	
 	button2.click(function(){
-		lastGoFirst(); //jako parametr - kolejny nr paragrafu
+		lastGoFirst(paragrafIndex); //jako parametr - kolejny nr paragrafu
 		console.log(paragrafIndex);
 	});
 	function lastGoFirst(){
-			
+			for(var i=0; i<paragrafCount; ++i){
+				if(paragrafIndex=0){
+					paragraf.css({'color': 'blue'},2000);
+				}
+			}
 		}
 	
 	
@@ -39,7 +44,11 @@ var paragrafIndex =0;
 		console.log(paragrafIndex);
 	});
 	function firstGoLast(){
-		
+		for (var i=0; i< paragrafCount; ++i){
+			if (paragrafIndex = paragrafCount){
+				paragraf.css({'color':'red'},2000);
+			}
+		}
 	}
 	
 	
