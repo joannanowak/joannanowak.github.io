@@ -8,6 +8,7 @@ var paragraf = $('.para');
 var paragrafCount = $('.para').length;
 var paragrafIndex =0;
 	
+	//ZADANIE 1//
 	napis.hide(); //ukrywa napis h2
 	button.click(function(){ //po kliknięciu w button
 		kwadrat.animate({'margin-left':'100px'}, 1500, zmniejsz); //przesuń o 100px i zmniejsz
@@ -24,6 +25,7 @@ var paragrafIndex =0;
 		}
 	})
 	
+	//ZADANIE 2//
 	console.log(paragrafCount);
 	
 	button2.click(function(){
@@ -46,7 +48,7 @@ var paragrafIndex =0;
 	function firstGoLast(){
 		for (var i=0; i< paragrafCount; ++i){
 			if (paragrafIndex = paragrafCount){
-				paragraf.css({'color':'red'},2000);
+				paragraf.slideUp(2000); 
 			}
 		}
 	}
