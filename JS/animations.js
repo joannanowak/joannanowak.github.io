@@ -5,7 +5,7 @@ var napis = $('h2');
 var button2 = $('#button2');
 var button3 = $('#button3');
 var paragraf = $('.para');
-var paragrafCount = $('.para').length;
+var paragrafCount = $('.para');
 var paragrafIndex =0;
 	
 	//ZADANIE 1//
@@ -32,13 +32,17 @@ var paragrafIndex =0;
 		lastGoFirst(paragrafIndex); //jako parametr - kolejny nr paragrafu
 		console.log(paragrafIndex);
 	});
-	function lastGoFirst(paragrafIndex){
-			for(var i=0; i<paragrafCount; ++i){
-				if(paragrafIndex=i){
-					paragraf.slideUp(2000);
-				}
-			}
+	function lastGoFirst(){
+		var ostatni = paragraf.last();
+		var pierwszy = paragraf.first();
+		console.log(ostatni);
+		console.log(pierwszy);
+		
+		for(var i=0; i<paragrafCount.length; ++i){
+			ostatni.insertBefore(pierwszy);
 		}
+			}
+		
 	
 	
 	button3.click(function(){
@@ -46,12 +50,11 @@ var paragrafIndex =0;
 		console.log(paragrafIndex);
 	});
 	function firstGoLast(){
-		for (var i=0; i< paragrafCount; ++i){
-			if (paragrafIndex = paragrafCount){
-				paragraf.slideUp(2000);
+		var pierwszy = paragraf.first();
+		var ostatni = paragraf.last();
+		console.log(ostatni);
+			pierwszy.insertAfter(ostatni);
 			}
-		}
-	}
-	
-	
 });
+	
+	
