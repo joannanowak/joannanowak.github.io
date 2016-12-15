@@ -46,7 +46,8 @@ $('#next').click(function(){
 		
 	paragraf.each(function(){
 	
-    paragraf.first().insertAfter(last);
+		 $('p:first').insertBefore($('p:last')); 
+
 	})
 });
 
@@ -55,7 +56,7 @@ $('#prev').click(function(){
 	paragraf.each(function(){
     
 	
-    paragraf.last().insertBefore(first);
+     $('p:last').after($('p:first'));
 		})
 });
 			
