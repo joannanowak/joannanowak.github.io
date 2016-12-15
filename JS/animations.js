@@ -2,11 +2,7 @@ $(function(){
 var kwadrat = $('#kwadrat');
 var button = $('button');
 var napis = $('h2');
-var button2 = $('#button2');
-var button3 = $('#button3');
-var paragraf = $('.para');
-var paragrafCount = $('.para');
-var paragrafIndex =0;
+
 	
 	//ZADANIE 1//
 	napis.hide(); //ukrywa napis h2
@@ -26,35 +22,75 @@ var paragrafIndex =0;
 	})
 	
 	//ZADANIE 2//
-	console.log(paragrafCount);
+var listOfPara = $('#singe_homework_solution');
+var paragraf = $('.para');
+
 	
-	button2.click(function(){
-		lastGoFirst(paragrafIndex); //jako parametr - kolejny nr paragrafu
-		console.log(paragrafIndex);
-	});
-	function lastGoFirst(){
-		var ostatni = paragraf.last();
-		var pierwszy = paragraf.first();
-		console.log(ostatni);
-		console.log(pierwszy);
+	console.log(listOfPara);
+	console.log(paragraf);
+	console.log(paragraf[0]);
+
+	var first = paragraf.first();
+	console.log(first);
+	
+	 var last = paragraf.last();
+	console.log(last);
+	
+	 var first= paragraf.first();
+	
+	console.log(first);
+	
+	
+	
+$('#next').click(function(){
 		
-		for(var i=0; i<paragrafCount.length; ++i){
-			ostatni.insertBefore(pierwszy);
-		}
-			}
-		
+	paragraf.each(function(){
+	
+    paragraf.first().insertAfter(last);
+	})
+});
+
+$('#prev').click(function(){
+	
+	paragraf.each(function(){
+    
+	
+    paragraf.last().insertBefore(first);
+		})
+});
+			
 	
 	
-	button3.click(function(){
-		firstGoLast(paragrafIndex);
-		console.log(paragrafIndex);
-	});
-	function firstGoLast(){
-		var pierwszy = paragraf.first();
-		var ostatni = paragraf.last();
-		console.log(ostatni);
-			pierwszy.insertAfter(ostatni);
-			}
 });
 	
 	
+
+
+
+
+
+
+//
+//	
+//$('#next').click(function(){
+//     var last = paragraf.last();
+//	
+//     console.log(last);
+//	
+//    paragraf.first().insertAfter(last);
+//	
+//});
+//
+//$('#prev').click(function(){
+//     var first= paragraf.first();
+//	
+//	console.log(first);
+//	
+//    paragraf.last().insertBefore(first);
+//});
+//			
+//	
+//	
+//});
+//	
+//	
